@@ -1,0 +1,98 @@
+.services{
+    background: #f5f5f6;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.services h1, .gallery h1{
+    color: #42464f;
+}
+
+.container3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.service{
+    width: calc(25% - 30px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.service a{
+    color: #42463f ;
+    transition: 0.3s;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 600;
+    padding-top: 18px;
+    margin-bottom: 8px;
+}
+
+.service a:hover{
+    text-decoration: underline;
+    color: #42bb73;
+}
+
+.service i{
+    font-size: 49px;
+    color: #42b773;
+    transition: 0.4s;
+}
+
+.service p{
+    color: #658997;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.service:hover .fa-solid, .service:hover .fa-regular, .service i:hover{
+    color: #a9dc56;
+}
+
+.links2{
+    background: #42b773;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.links2 i{
+    color: white;
+    font-size: 23px;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    background: transparent;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.links2 i:hover{
+    background: #a9dc56;
+}
+
+@media(max-width: 991px){
+    .service{
+        width: calc(50% - 30px);
+    }
+    .container3{
+        justify-content: space-evenly;
+        padding: 0;
+    }
+}
+
+@media(max-width: 767px){
+    .service{
+        width: calc(100% - 30px);
+    }
+}

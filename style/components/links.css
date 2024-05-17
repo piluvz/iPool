@@ -1,0 +1,112 @@
+.links{
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: white;
+    padding: 0 30px;
+    margin-top: -80px;
+}
+
+.container2{
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.element{
+    width: 50%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-bottom: 50px;
+}
+
+.circle{
+    background-color: white;
+    color: rgba(101, 137, 151, 0.33);
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    border-radius: 100%;
+    border: 3px solid rgba(101, 137, 151, 0.23);
+    font-size: 37px;
+    font-weight: 400;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.element a{
+    color:#42b773;
+    transition: 0.3s;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 600;
+}
+
+.element p{
+    color:#658997;
+    font-size: 13px;
+    margin-top: 8px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.item-list{
+    padding-left: 30px;
+    max-width: 70%;
+}
+
+.element a:hover{
+    text-decoration: underline;
+    color: #42464f;
+}
+
+.element:hover .circle, .circle:hover{
+    background-color: #a9dc56;
+    color: white;
+}
+
+.green{
+    background-image: url(../../img/add-p.png);
+}
+
+.green img{
+    filter: invert(1);
+}
+
+@media(max-width: 991px){
+    .element{
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .links{
+        padding: 0;
+        margin-top: -100px;
+    }
+    .container2{
+        padding: 10px;
+        margin: 0;
+        align-items: center;
+    }
+}
+
+@media(max-width: 450px){
+    .circle{
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+    .element{
+        align-items: start;
+    }
+    
+}

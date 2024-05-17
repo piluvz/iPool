@@ -1,0 +1,17 @@
+@import url("vendor/reset.css");
+@import url("components/header.css");
+@import url("components/main.css");
+@import url("components/about.css");
+@import url("components/numbers.css");
+@import url("components/why.css");
+@import url("components/links.css");
+@import url("components/offer.css");
+@import url("components/services.css");
+@import url("components/footer.css");
+@import url("components/gallery.css");
+
+a{
+    text-decoration: none;
+}
+
+
